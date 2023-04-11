@@ -844,22 +844,46 @@ animation: ani 0.5s forwards;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 61.99875em) {
+  .my-profile__body {
+    flex-direction: column;
+  }
+}
 .my-profile__left {
   width: 300px;
   min-width: 300px;
   margin: 10px 20px 0px 0px;
+}
+@media (max-width: 61.99875em) {
+  .my-profile__left {
+    width: 100%;
+    min-width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
 }
 .my-profile__right {
   flex: 0 1 100%;
   display: flex;
   gap: 20px;
 }
+@media (max-width: 47.99875em) {
+  .my-profile__right {
+    flex-direction: column;
+  }
+}
 .my-profile__itr {
   flex: 0 1 70%;
   margin: 10px 0px 0px 0px;
 }
 .my-profile__calendar {
-  flex: 0 1 30%;
+  flex: 0 0 30%;
+  min-width: 300px;
+}
+@media (max-width: 47.99875em) {
+  .my-profile__calendar {
+    width: 100%;
+    min-width: 100%;
+  }
 }
 
 .profile-client {
@@ -967,6 +991,30 @@ animation: ani 0.5s forwards;
   width: 300px;
   min-width: 300px;
 }
+@media (max-width: 61.99875em) {
+  .menu-my-profile {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    min-width: 100%;
+  }
+}
+@media (max-width: 47.99875em) {
+  .menu-my-profile {
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 47.99875em) {
+  .menu-my-profile {
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
 .menu-my-profile__item {
   display: flex;
   gap: 10px;
@@ -1038,6 +1086,18 @@ animation: ani 0.5s forwards;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
+}
+@media (max-width: 61.99875em) {
+  .view-subpage__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+@media (max-width: 29.99875em) {
+  .view-subpage__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
 }
 .view-subpage__item {
   position: relative;
