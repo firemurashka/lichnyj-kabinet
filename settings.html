@@ -5,11 +5,11 @@
 	<title>Настройки</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230417161212">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230505153710">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230417161212" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230417161212" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230505153710" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230505153710" rel="stylesheet">
 
 </head>
 
@@ -79,7 +79,7 @@
 						<a class="header__bell _icon-bell" href=""></a>
 						<div class="header__image-box">
 							<!-- <a href="/my_profile" class="header__image"> -->
-							<a href="my_profile.html" class="header__image">
+							<a href="settings.html" class="header__image">
 								<span class="header__word">К</span>
 								<span class="header__word_hidden">Изменить фото</span>
 							</a>
@@ -95,8 +95,217 @@
 			<section class="subpage">
 				<div class="subpage__container">
 					<h1 class="subpage__title title">Настройки</h1>
-					<div class="subpage__body"></div>
-				</div>
+					<div class="subpage__body">
+						<div class="profile">
+							<div class="profile__body">
+								<div class="profile__photo">
+									<div class="profile__image">
+										<picture><source srcset="img/client/client01.webp" type="image/webp"><img src="img/client/client01.jpg" alt=""></picture>
+									</div>
+									<a href="" class="profile__link">Изменить фото</a>
+								</div>
+								<div data-tabs data-tabs-animate="100" class="tabs">
+									<nav data-tabs-titles class="tabs__navigation">
+										<button type="button" class="tabs__title _tab-active">Основные настройки</button>
+										<button type="button" class="tabs__title">Социальные сети</button>
+										<button type="button" class="tabs__title">Резюме</button>
+									</nav>
+									<div data-tabs-body class="tabs__content">
+										<div class="tabs__body">
+											<div class="form-profile">
+												<!--форма-->
+												<form action="#" id="form" class="form-profile__form">
+													<!--1 поле - ввод фамилии -->
+													<div class="form-profile__item">
+														<!--label привязан к formSurname -->
+														<label for="formSurname" class="form-profile__label"> Фамилия:</label>
+														<!--чтобы связать label и input пишем id="formSurname" -->
+														<input id="formSurname" type="text" name="name" class="form-profile__input">
+													</div>
+													<!--2 поле - ввод имени -->
+													<div class="form-profile__item">
+														<!--label привязан к formName -->
+														<label for="formName" class="form-profile__label">
+															Имя:
+														</label>
+														<!--чтобы связать label и input пишем id="formName" -->
+														<input id="formName" type="text" name="name" class="form-profile__input">
+													</div>
+													<!--3 поле - дата рождения -->
+													<div class="form-profile__item">
+														<!--label привязан к formDate -->
+														<label for="formDate" class="form-profile__label">
+															Дата рождения:
+														</label>
+														<!--чтобы связать label и input пишем id="formDate" -->
+														<input id="formDate" type="text" name="name" class="form-profile__input">
+													</div>
+													<!--4 поле - город проживания -->
+													<div class="form-profile__item">
+														<!--label привязан к formSity -->
+														<label for="formSity" class="form-profile__label">
+															Город проживания:
+														</label>
+														<!--чтобы связать label и input пишем id="formSity" -->
+														<input id="formSity" type="text" name="name" class="form-profile__input">
+													</div>
+													<!--5 поле - Семейное положение -->
+													<div class="form-profile__item form-profile__item_radio">
+														<div class="form-profile__title">Семейное положение:</div>
+														<div class="form-profile__radio">
+															<div class="form-profile__radio-item">
+																<input type="radio" id="married" name="family" value="married" checked>
+																<label for="married">Женат/Замужем</label>
+															</div>
+															<div class="form-profile__radio-item">
+																<input type="radio" id="single" name="family" value="single">
+																<label for="single">Холост/Не замужем</label>
+															</div>
+															<div class="form-profile__radio-item">
+																<input type="radio" id="divorced" name="family" value="divorced">
+																<label for="divorced">Разведен/а</label>
+															</div>
+															<div class="form-profile__radio-item">
+																<input type="radio" id="widower" name="family" value="widower">
+																<label for="widower">Вдовец/Вдова</label>
+															</div>
+															<div class="form-profile__radio-item">
+																<input type="radio" id="separate" name="family" value="separate">
+																<label for="separate">Отдельное проживание</label>
+															</div>
+															<div class="form-profile__radio-item">
+																<input type="radio" id="other" name="family" value="other">
+																<label for="other">Другое</label>
+															</div>
+														</div>
+													</div>
+													<!-- 6 поле - образование -->
+													<div class="form-profile__item form-profile__item_select">
+														<div class="form-profile__title">Образование:</div>
+														<select name="form[]" class="form">
+															<option value="1" selected>Высшее</option>
+															<option value="2">Среднее</option>
+															<option value="3">Школьное</option>
+															<option value="4">
+																Другое
+															</option>
+														</select>
+													</div>
+													<!--7 поле - Деятельность -->
+													<div class="form-profile__item">
+														<!--label привязан к formActivity -->
+														<label for="formActivity" class="form-profile__label">
+															Деятельность:
+														</label>
+														<!--чтобы связать label и input пишем id="formActivity" -->
+														<input id="formActivity" type="text" name="name" class="form-profile__input">
+													</div>
+													<!--8 поле - Профессия -->
+													<div class="form-profile__item">
+														<!--label привязан к formProfession -->
+														<label for="formProfession" class="form-profile__label">
+															Профессия:
+														</label>
+														<!--чтобы связать label и input пишем id="formProfession" -->
+														<input id="formProfession" type="text" name="name" class="form-profile__input">
+													</div>
+													<!--9 поле - Хобби/увлечения -->
+													<div class="form-profile__item">
+														<!--label привязан к formHobby -->
+														<label for="formHobby" class="form-profile__label">
+															Хобби/увлечения:
+														</label>
+														<!--чтобы связать label и input пишем id="formHobby" -->
+														<input id="formHobby" type="text" name="name" class="form-profile__input">
+													</div>
+													<!-- 10 поле - Комментарий -->
+													<div class="form-profile__item form-profile__item_textarea">
+														<label for="formMessage" class="form-profile__label">Комментарий:</label>
+														<textarea name="message" id="formMessage" class="form-profile__input" placeholder="Введите комментарий"></textarea>
+													</div>
+													<!--6 кнопка -->
+													<button type="submit" class="form-profile__button btn">Сохранить</button>
+												</form>
+											</div>
+										</div>
+										<div class="tabs__body">
+											<!-- Социальные сети -->
+											<form action="#" id="form" class="form-social__form">
+												<!--1 поле - Telegram -->
+												<div class="form-social__item">
+													<div class="form-social__icon">
+														<img src="img/icons/social/telegram.svg" alt="">
+													</div>
+													<!--label привязан к formTelegram -->
+													<label for="formTelegram" class="form-social__label"> Telegram:</label>
+													<!--чтобы связать label и input пишем id="formTelegram" -->
+													<input id="formTelegram" type="text" name="social" class="form-social__input">
+												</div>
+												<!--2 поле - Whatsapp -->
+												<div class="form-social__item">
+													<div class="form-social__icon">
+														<img src="img/icons/social/whatsapp.svg" alt="">
+													</div>
+													<!--label привязан к formWhatsapp -->
+													<label for="formWhatsapp" class="form-social__label"> Whatsapp:</label>
+													<!--чтобы связать label и input пишем id="formWhatsapp" -->
+													<input id="formWhatsapp" type="text" name="social" class="form-social__input">
+												</div>
+												<!--3 поле - Instagram -->
+												<div class="form-social__item">
+													<div class="form-social__icon">
+														<img src="img/icons/social/instagram.svg" alt="">
+													</div>
+													<!--label привязан к formInstagram -->
+													<label for="formInstagram" class="form-social__label"> Instagram:</label>
+													<!--чтобы связать label и input пишем id="formInstagram" -->
+													<input id="formInstagram" type="text" name="social" class="form-social__input">
+												</div>
+												<!--4 поле - Vk -->
+												<div class="form-social__item">
+													<div class="form-social__icon">
+														<img src="img/icons/social/vk.svg" alt="">
+													</div>
+													<!--label привязан к formVk -->
+													<label for="formVk" class="form-social__label">VK:</label>
+													<!--чтобы связать label и input пишем id="formVk" -->
+													<input id="formVk" type="text" name="social" class="form-social__input">
+												</div>
+												<!--5 поле - Youtube -->
+												<div class="form-social__item">
+													<div class="form-social__icon">
+														<img src="img/icons/social/youtube.svg" alt="">
+													</div>
+													<!--label привязан к formYoutube -->
+													<label for="formYoutube" class="form-social__label"> Youtube:</label>
+													<!--чтобы связать label и input пишем id="formYoutube" -->
+													<input id="formYoutube" type="text" name="social" class="form-social__input">
+												</div>
+												<!--6 кнопка -->
+												<button type="submit" class="form-social__button btn">Сохранить</button>
+											</form>
+										</div>
+										<div class="tabs__body">
+
+											<div class="up">
+												<div class="fileName">
+													<a><span>Файл не выбран</span></a>
+												</div>
+												<div class="file-search-button">
+													<label for="file-upload" class="custom-file-upload  btn">
+														<i class="fa fa-search"></i>
+														Загрузить резюме
+													</label>
+													<input id="file-upload" type="file">
+												</div>
+												<button class="up__button btn">Сохранить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 			</section>
 		</main>
 		<footer class="footer">
@@ -117,7 +326,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230417161212"></script>
+	<script src="js/app.min.js?_v=20230505153710"></script>
 </body>
 
 </html>
