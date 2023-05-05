@@ -1629,6 +1629,7 @@ input[type=file] {
   min-height: 150px;
   text-align: center;
   line-height: 140%;
+  min-width: 500px;
 }
 .fileName span {
   max-width: 200px;
