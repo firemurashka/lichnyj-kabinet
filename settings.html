@@ -5,11 +5,11 @@
 	<title>Настройки</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230505155534">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230505164941">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230505155534" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230505155534" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230505164941" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230505164941" rel="stylesheet">
 
 </head>
 
@@ -139,7 +139,6 @@
 														</label>
 														<!--чтобы связать label и input пишем id="formDate" -->
 														<input type="date" class="recording__input">
-
 														<!--  <input
                                                                 id="formDate"
                                                                 type="text"
@@ -240,52 +239,62 @@
 											<form action="#" id="form" class="form-social__form">
 												<!--1 поле - Telegram -->
 												<div class="form-social__item">
-													<div class="form-social__icon">
-														<img src="img/icons/social/telegram.svg" alt="">
+													<div class="form-social__left">
+														<div class="form-social__icon">
+															<img src="img/icons/social/telegram.svg" alt="">
+														</div>
+														<!--label привязан к formTelegram -->
+														<label for="formTelegram" class="form-social__label"> Telegram:</label>
+														<!--чтобы связать label и input пишем id="formTelegram" -->
 													</div>
-													<!--label привязан к formTelegram -->
-													<label for="formTelegram" class="form-social__label"> Telegram:</label>
-													<!--чтобы связать label и input пишем id="formTelegram" -->
 													<input id="formTelegram" type="text" name="social" class="form-social__input">
 												</div>
 												<!--2 поле - Whatsapp -->
 												<div class="form-social__item">
-													<div class="form-social__icon">
-														<img src="img/icons/social/whatsapp.svg" alt="">
+													<div class="form-social__left">
+														<div class="form-social__icon">
+															<img src="img/icons/social/whatsapp.svg" alt="">
+														</div>
+														<!--label привязан к formWhatsapp -->
+														<label for="formWhatsapp" class="form-social__label"> Whatsapp:</label>
+														<!--чтобы связать label и input пишем id="formWhatsapp" -->
 													</div>
-													<!--label привязан к formWhatsapp -->
-													<label for="formWhatsapp" class="form-social__label"> Whatsapp:</label>
-													<!--чтобы связать label и input пишем id="formWhatsapp" -->
 													<input id="formWhatsapp" type="text" name="social" class="form-social__input">
 												</div>
 												<!--3 поле - Instagram -->
 												<div class="form-social__item">
-													<div class="form-social__icon">
-														<img src="img/icons/social/instagram.svg" alt="">
+													<div class="form-social__left">
+														<div class="form-social__icon">
+															<img src="img/icons/social/instagram.svg" alt="">
+														</div>
+														<!--label привязан к formInstagram -->
+														<label for="formInstagram" class="form-social__label"> Instagram:</label>
+														<!--чтобы связать label и input пишем id="formInstagram" -->
 													</div>
-													<!--label привязан к formInstagram -->
-													<label for="formInstagram" class="form-social__label"> Instagram:</label>
-													<!--чтобы связать label и input пишем id="formInstagram" -->
 													<input id="formInstagram" type="text" name="social" class="form-social__input">
 												</div>
 												<!--4 поле - Vk -->
 												<div class="form-social__item">
-													<div class="form-social__icon">
-														<img src="img/icons/social/vk.svg" alt="">
+													<div class="form-social__left">
+														<div class="form-social__icon">
+															<img src="img/icons/social/vk.svg" alt="">
+														</div>
+														<!--label привязан к formVk -->
+														<label for="formVk" class="form-social__label">VK:</label>
+														<!--чтобы связать label и input пишем id="formVk" -->
 													</div>
-													<!--label привязан к formVk -->
-													<label for="formVk" class="form-social__label">VK:</label>
-													<!--чтобы связать label и input пишем id="formVk" -->
 													<input id="formVk" type="text" name="social" class="form-social__input">
 												</div>
 												<!--5 поле - Youtube -->
 												<div class="form-social__item">
-													<div class="form-social__icon">
-														<img src="img/icons/social/youtube.svg" alt="">
+													<div class="form-social__left">
+														<div class="form-social__icon">
+															<img src="img/icons/social/youtube.svg" alt="">
+														</div>
+														<!--label привязан к formYoutube -->
+														<label for="formYoutube" class="form-social__label"> Youtube:</label>
+														<!--чтобы связать label и input пишем id="formYoutube" -->
 													</div>
-													<!--label привязан к formYoutube -->
-													<label for="formYoutube" class="form-social__label"> Youtube:</label>
-													<!--чтобы связать label и input пишем id="formYoutube" -->
 													<input id="formYoutube" type="text" name="social" class="form-social__input">
 												</div>
 												<!--6 кнопка -->
@@ -293,10 +302,11 @@
 											</form>
 										</div>
 										<div class="tabs__body">
-
 											<div class="up">
 												<div class="fileName">
-													<a><span>Файл не выбран</span></a>
+													<a>
+														<span>Файл не выбран</span>
+													</a>
 												</div>
 												<div class="file-search-button">
 													<label for="file-upload" class="custom-file-upload  btn">
@@ -333,7 +343,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230505155534"></script>
+	<script src="js/app.min.js?_v=20230505164941"></script>
 </body>
 
 </html>
