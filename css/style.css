@@ -1142,13 +1142,13 @@ animation: ani 0.5s forwards;
   font-size: 16px;
   font-weight: 500;
   line-height: 130%;
-  z-index: 10;
+  z-index: 1;
   position: relative;
   max-width: 200px;
 }
 .view-subpage__text {
   line-height: 130%;
-  z-index: 10;
+  z-index: 1;
   position: relative;
   max-width: 200px;
 }
@@ -2017,7 +2017,7 @@ input[type=file] {
     width: 46%;
   }
 }
-@media (max-width: 50em) {
+@media (max-width: 800px) {
   .map-kjo__item {
     width: 100%;
   }
@@ -2076,13 +2076,13 @@ input[type=file] {
   position: absolute;
   height: 1.875rem;
   width: 1.875rem;
-  background: url("img/kjo/icons/check-map-grey.svg") 0 0/70% no-repeat;
+  background: url("../img/kjo/icons/check-map-grey.svg") 0 0/70% no-repeat;
   top: 0.125rem;
   left: 0;
   display: inline-block;
 }
 .item-kjo .check-map-active::before {
-  background: url("img/kjo/icons/check-map-active.svg") 0 0/70% no-repeat;
+  background: url("../img/kjo/icons/check-map-active.svg") 0 0/70% no-repeat;
 }
 
 .map-kjo-middle {
@@ -2160,7 +2160,7 @@ input[type=file] {
 .explanation__square {
   border: 2px solid #4A006C;
   height: 1.5625rem;
-  width: 1.5625rem;
+  flex: 0 0 25px;
 }
 .explanation__square_dark {
   background-color: #4A006C;
@@ -2176,6 +2176,7 @@ input[type=file] {
 @media (max-width: 47.99875em) {
   .factor__bottom {
     flex-direction: column;
+    gap: 0.625rem;
   }
 }
 .factor__content {
@@ -2211,8 +2212,8 @@ input[type=file] {
   font-size: 0.75rem;
 }
 .explanation-factor__square {
-  min-height: 1.25rem;
-  min-width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 20px;
   border-radius: 0.3125rem;
 }
 .explanation-factor__square_green {
@@ -2226,15 +2227,15 @@ input[type=file] {
   position: relative;
   overflow: hidden;
   max-width: 3.125rem;
+  height: 20px;
 }
 .explanation-factor .explanation-factor__line::after {
   content: "-----";
-  letter-spacing: 6px;
-  font-size: 0.875rem;
+  letter-spacing: 2px;
+  font-size: 1.0625rem;
   color: #717070;
   display: inline-block;
-  vertical-align: 3px;
-  padding-left: 10px;
+  vertical-align: 22px;
 }
 .explanation-factor .explanation-factor__line_dark::after {
   color: #000;
